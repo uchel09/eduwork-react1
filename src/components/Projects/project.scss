@@ -1,0 +1,72 @@
+.projects {
+    color: white;
+    padding-inline: 5em;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+
+    .projects-container {
+        width: 100%;
+        color: black;
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+
+        .projects-box {
+            position: relative;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 30%;
+            height: 250px;
+            background-color: rgb(255, 240, 78);
+            border-radius: 20px;
+            box-shadow: 1px 8px 10px 2px white;
+            overflow: hidden;
+        }
+    }
+
+
+}
+
+.projects-box>.i {
+    font-size: 50px;
+    color: rgb(27, 58, 215);
+    margin-bottom: 25px;
+}
+
+.projects-box label {
+    font-size: 15px;
+    color:rgb(0, 100, 171);
+}
+
+.projects-box::after {
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 102, 0);
+    width: 100%;
+    height: 100%;
+    transition: 0.4s;
+    z-index: 1;
+    bottom: -100%;
+}
+
+.projects-box:hover.projects-box::after,
+.contact-info:hover.contact-info::after {
+    bottom: 0;
+}
+
+.projects-box:hover.projects-box .i,
+.projects-box:hover.projects-box>h3,
+.projects-box:hover.projects-box>label {
+    color: white;
+    z-index: 2;
+}

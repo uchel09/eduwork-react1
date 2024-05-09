@@ -1,0 +1,47 @@
+section {
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  scroll-snap-align: center;
+  background-color: black;
+  background-image: url('/stars.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+header {
+  background-color: transparent;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  background-image: url('/stars.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.course {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .box {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+
+  }
+}

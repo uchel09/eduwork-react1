@@ -1,0 +1,164 @@
+.hero-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+
+    overflow: hidden;
+
+
+    .img-container {
+        margin: auto 0;
+        width: 480px;
+        height: 480px;
+        border-radius: 55% 45% 55% 45%;
+        overflow: hidden;
+
+        img {
+            display: flex;
+            object-fit: cover;
+            width: 480px;
+            height: 480px;
+        }
+    }
+}
+
+.me {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+
+    .myname {
+        color: white;
+        font-size: 20px;
+
+    }
+
+    .myskill {
+        color: rgb(78, 243, 255);
+        font-size: 30px;
+
+    }
+
+    .text-info {
+        p {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+    .button-hero{
+        margin-top: 20px;
+        display: flex;
+        gap: 20px;
+        button{
+            width: 100px;
+            height: 20px;
+            cursor: pointer;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .hero {
+        width: 40%;
+
+        .img-container {
+            margin: auto 0;
+            width: 300px;
+            height: 300px;
+
+            img {
+                width: 300px;
+                height: 300px;
+            }
+        }
+    }
+
+    .hero-info {
+        padding-left: 0;
+        width: 60%;
+
+        .myname {
+            color: white;
+            font-size: 20px;
+
+        }
+
+        .myskill {
+            color: rgb(78, 243, 255);
+            font-size: 25px;
+
+        }
+
+        .text-info {
+            p {
+                font-size: 14px;
+
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .me {   
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .hero {
+        width: 100%;
+        .img-container {
+            width: 200px;
+            height: 200px;
+            img {
+                display: flex;
+                object-fit: cover;
+                width: 200px;
+                height: 200px;
+            }
+        }
+    }
+
+    .hero-info {
+        padding-left: 0;
+        width: 100%;
+        justify-content: center;
+
+        .myname {
+            color: white;
+            font-size: 20px;
+
+        }
+
+        .myskill {
+            color: rgb(78, 243, 255);
+            font-size: 20px;
+
+        }
+        .text-info{
+            font-size: 12px;
+        }
+    }
+}
